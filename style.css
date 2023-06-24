@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navbar */
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    color: #556B2F;
+    box-shadow: 0 3px 15px 2px #777;
+    background: #fff;
+    /* position: sticky;
+    top: 0;
+    z-index: 1; */
+}
+.navbar .logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.navbar .logo h1{
+    margin: 0 0 0 130px;
+    font-family: 'Patua One', cursive;
+    font-weight: lighter;
+
+}
+.navbar  .content{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.navbar  .content ul{
+    display: flex;
+    list-style: none;
+}
+.navbar  .content ul li {
+    margin: 0 0 0 30px;
+    font-size: 17px;
+    position: relative;
+    font-family: 'DM Sans', sans-serif;
+
+
+}
+.navbar  .content ul li a{
+    text-decoration: none;
+    color: #556B2F;
+    transition: all 0.5s;
+
+}
+.navbar  .content ul li::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #556B2F;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    
+}
+.navbar  .content ul li:hover::after {
+    transform: scaleX(1);
+  }
+  .navbar  .content ul li a:hover{
+    color: black;
+  }
+/* Home */
+
+#Home{
+    background: linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,.7)) ,url(Images/background.jpg);
+    width: 100%;
+    height: 470px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+#Home .H-center h4{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 4px;
+    color: rgba(244, 255, 255, 0.8);
+}
+#Home .H-center {
+    height: max-content;
+    width: max-content;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center  ;
+}
+#Home .H-center  h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 70PX;
+    margin: 10px 0 4px 0;
+    font-weight: 100;
+}
+#Home .H-center p{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 15px;
+}
+#Home .H-center img{
+    width:430px ;
+    height:45px ;
+    margin: 20px 0 10px 0;
+}
+
+#Home .H-center h6{
+    font-variant: small-caps;
+    letter-spacing: 4px;
+    font-size: 22px;
+    font-weight: 100;
+    font-family: 'Xanh Mono', monospace;
+}
+
+
+
+/* Menu */
+
+#Menu{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    
+}
+#Menu hr{
+    width: 100px;
+    height: 0;
+    border: 2px solid #000;
+    border-radius: 15px;
+    background: #000;
+    position: relative;
+    left: 50%;
+    margin: 0 0 25px 0;
+    transform: translate(-50%, -12px);
+}
+
+#Menu #menu-head{
+    font-size: 50px;
+    margin: 15px 0 0px 0;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+#Menu .Menu-container {
+    display: flex;
+    padding: 0px 200px;
+    justify-content: center;
+}
+#Menu .Menu-container .dishes{
+    height: fit-content;
+    width: 200px;
+    position: relative;
+    text-align: left;
+
+}
+#Menu .Menu-container .dishes .dish-img{
+    height: 150px;
+    width: 200px;
+}
+#Menu .Menu-container .dishes  h1{
+    font-size: 16px;
+    color: #222;
+    margin: 5px 0 3px  0;
+    font-family: 'Raleway', sans-serif;
+}
+#Menu .Menu-container .dishes p{
+    font-size: 12px;
+    color: #333;
+    letter-spacing: 1px;
+    font-family: 'Lora', serif;
+
+}
+#Menu .Menu-container #dish-1  h1 span {
+    margin: 0 0 0 42px;
+    color: #111;
+}
+
+#Menu .Menu-container #dish-2{
+    margin: 0 60px;
+}
+#Menu .Menu-container #dish-2 h1 span {
+    margin: 0 0 0 51px;
+    color: #111;
+}
+
+#Menu .Menu-container #dish-3 h1 span {
+    margin: 0 0 0 13px;
+    color: #111;
+}
+#Menu .Menu-container .dishes  button{
+    border: none;
+    cursor: pointer;
+    background: #222;
+    margin: 10px 0 0 0;
+    color: #fff;
+    padding: 7px 22px;
+}
+
+#Menu .Menu-container .dishes  button:hover{
+    background: #010101;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px 0 #111;
+}
+
+#AboutUs{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    background: #bb9c6e;
+    color: #fff;
+}
+
+#AboutUs h1{
+    font-size: 50px;
+    margin: 25px 0 0px 0;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+
+#AboutUs hr{
+        width: 100px;
+    height: 0px;
+    border: 2px solid #fff;
+    border-radius: 14px;
+    background: #fff;
+    position: relative;
+    margin: 0 0 10px 0;
+    transform: translate(-50%, -12px);
+    top: 0;
+    left: 50%;
+}
+
+#AboutUs .about-top {
+    margin: 0 150px;
+    padding: 0 85px;
+}
+
+#AboutUs .about-top  p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 5px 0 0 0;
+}
+
+#AboutUs .about-bottom{
+  padding:  0 150px  30px 150px;
+  margin: 40px 0 0 0;
+  display: flex;
+}
+
+#AboutUs .about-bottom .left{
+    width: 50%;
+}
+#AboutUs .about-bottom .left img{
+    height: 209px;
+    width: 70%;
+    margin: 0 0 0 20%;
+}
+
+#AboutUs .about-bottom .right{
+    width: 50%;
+    text-align: left;
+}
+#AboutUs .about-bottom .right h3{
+    margin: 15px 0  5px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+#AboutUs .about-bottom .right p{
+    font-size: 11px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 0.5px;
+}
+#AboutUs .about-bottom .right button{
+    padding: 7px 10px;
+    border: none;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0 0px 0;
+}
+
+#Testimonial {
+    text-align: center;
+}
+#Testimonial h1 {
+    font-size: 50px;
+    margin: 25px 0 0px 0;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+
+#Testimonial hr{
+    width: 100px;
+    height: 0px;
+    border: 2px solid #000;
+    border-radius: 14px;
+    background: #000;
+    position: relative;
+    margin: 0 0 10px 0;
+    transform: translate(-50%, -12px);
+    top: 0;
+    left: 50%;
+}
+
+#Testimonial .test-pics{
+    display: flex;
+    padding: 0 240px;
+    margin: 110px 0 0 0;
+}
+#Testimonial .test-pics .per{
+    border: 1px solid #000;
+    height: fit-content;
+    width: 200px;
+    padding: 0 5px 20px 5px;
+    margin: 0 25px;
+}
+#Testimonial .test-pics .per .Persons{
+    border-radius: 50%;
+    transform: translate(0px , -50%);
+}
+#Testimonial .test-pics .per  h2{
+    margin: -65px 0 2px 0;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    color: #ec9706;
+}
+#Testimonial .test-pics .per p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin: 5px 0 0 0;
+}
+#Testimonial .test-pics #per-main{
+    width: 230px;
+    transform: translate(0, -15px);
+    height: 204px;
+}
+
+
+#ContactUs{
+    height: fit-content;
+    width: 100%;
+    background:#0c0b09; 
+    
+    color: #fff;
+    padding: 50px 0 1px 0;
+    display: flex;
+    margin: 30px 0 0 0;
+}
+#ContactUs .left{
+    width: 503px;
+    padding: 0 0 0 50px;
+}
+#ContactUs .left .fa-solid{
+    background: #cda45e;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    float: left;
+    margin: 0 30px 0 0;
+}
+
+#ContactUs .left h4{
+    font-size: 21px;
+}
+#m-s{
+    margin: 0 0 0 67px;
+}
+#ContactUs .left .l-all{
+    margin: 0 0 30px 0;
+}
+#ContactUs .left .l-all p{
+    color: #bab3a6;
+}
+#ContactUs  .right{
+    width: 650px;
+    text-align: center;
+}
+#ContactUs  .right .nail{
+    width: 304px;
+    height: 35px;
+}
+#ContactUs  .right .name{
+    margin: 0 10px 0 0;
+}
+#ContactUs  .right .c-sub{
+    width: 636px;
+    height: 35px;
+    margin:  20px 0;
+}
+#c-message{
+
+    max-width: 638px;
+    min-width: 638px;
+    height: 75px;
+    min-height: 75px;
+    max-height: 100px;
+    padding: 4px 0 0 5px;
+}
+.in-des{
+    padding: 0 5px;
+    background: transparent;
+    border: 1px solid #625b4b;
+    color: #fff;
+    outline: none;
+}
+#ContactUs  .right button{
+    padding: 7px 30px;
+    background: transparent;
+    border: 1px solid #625b4b;
+    color: #625b4b;
+    margin: 25px 0 0  0;
+    cursor: pointer;
+}
+
+#ContactUs  .right button:hover{
+    color: #fff;
+    background: #625b4b;
+    transition: 0.5s;
+}
+
+
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+  }
+
+  .footer a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
